@@ -268,6 +268,7 @@ local function set_highlights()
 		--- Identifiers
 		["@variable"] = { fg = palette.text, italic = styles.italic },
 		["@variable.builtin"] = { fg = palette.love, bold = styles.bold },
+		["@variable.builtin.dart"] = { fg = palette.text, bold = styles.bold },
 		["@variable.parameter"] = { fg = palette.iris, italic = styles.italic },
 		["@variable.member"] = { fg = palette.foam },
 
@@ -415,14 +416,17 @@ local function set_highlights()
 		["@lsp.type.namespace"] = { link = "@namespace" },
 		["@lsp.type.parameter"] = { link = "@parameter" },
 		["@lsp.type.property"] = { link = "@property" },
+		["@lsp.type.property.nix"] = { fg = palette.foam },
 		["@lsp.type.property.lua"] = { link = "@property.lua" },
 		["@lsp.type.variable"] = { link = "@variable" },
+		["@lsp.mod.annotation.dart"] = { fg = palette.gold },
 		["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
 		["@lsp.typemod.operator.injected"] = { link = "@operator" },
 		["@lsp.typemod.string.injected"] = { link = "@string" },
 		["@lsp.typemod.variable.constant"] = { link = "@constant" },
 		["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
 		["@lsp.typemod.variable.injected"] = { link = "@variable" },
+
 
 		--- Plugins
 		-- romgrk/barbar.nvim
