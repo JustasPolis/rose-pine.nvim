@@ -304,6 +304,7 @@ local function set_highlights()
 
 		-- ["@attribute"] = {},
 		["@property"] = { fg = palette.text, italic = styles.italic },
+		["@property.lua"] = { fg = palette.foam, italic = styles.italic },
 
 		--- Functions
 		["@function"] = { fg = palette.rose },
@@ -406,6 +407,7 @@ local function set_highlights()
 
 		--- Semantic
 		["@lsp.type.comment"] = {},
+		["@lsp.type.derive"] = { fg = palette.gold },
 		["@lsp.type.macro"] = { fg = palette.rose },
 		["@lsp.type.enum"] = { link = "@type" },
 		["@lsp.type.interface"] = { link = "@interface" },
