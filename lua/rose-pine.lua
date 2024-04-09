@@ -321,7 +321,7 @@ local function set_highlights()
 		["@keyword"] = { link = "Keyword" },
 		-- ["@keyword.coroutine"] = {},
 		-- ["@keyword.function"] = {},
-		["@keyword.operator"] = { fg = palette.subtle },
+		["@keyword.operator"] = { fg = palette.love },
 		["@keyword.import"] = { fg = palette.iris },
 		["@keyword.storage"] = { fg = palette.foam },
 		["@keyword.repeat"] = { fg = palette.iris },
