@@ -298,12 +298,12 @@ local function set_highlights()
 
 		--- Types
 		["@type"] = { fg = palette.foam },
-		["@type.builtin"] = { fg = palette.foam, bold = styles.bold },
-		-- ["@type.definition"] = {},
+		["@type.builtin"] = { fg = palette.iris, bold = styles.bold },
+		["@type.definition"] = { fg = palette.foam },
 		-- ["@type.qualifier"] = {},
 
 		-- ["@attribute"] = {},
-		["@property"] = { fg = palette.foam, italic = styles.italic },
+		["@property"] = { fg = palette.text, italic = styles.italic },
 
 		--- Functions
 		["@function"] = { fg = palette.rose },
@@ -406,6 +406,7 @@ local function set_highlights()
 
 		--- Semantic
 		["@lsp.type.comment"] = {},
+		["@lsp.type.macro"] = { fg = palette.rose },
 		["@lsp.type.enum"] = { link = "@type" },
 		["@lsp.type.interface"] = { link = "@interface" },
 		["@lsp.type.keyword"] = { link = "@keyword" },
@@ -776,7 +777,7 @@ local function set_highlights()
 
 		-- nvim-treesitter/nvim-treesitter-context
 		TreesitterContext = { bg = palette.overlay },
-		TreesitterContextLineNumber = { fg = palette.rose, bg = palette.overlay }
+		TreesitterContextLineNumber = { fg = palette.rose, bg = palette.overlay },
 	}
 	local transparency_highlights = {
 		DiagnosticVirtualTextError = { fg = groups.error },
