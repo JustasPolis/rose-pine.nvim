@@ -156,6 +156,7 @@ local function set_highlights()
 		DiagnosticHint = { fg = groups.hint },
 		DiagnosticInfo = { fg = groups.info },
 		DiagnosticWarn = { fg = groups.warn },
+		DiagnosticUnnecessary = { fg = palette.subtle },
 		DiagnosticDefaultError = { link = "DiagnosticError" },
 		DiagnosticDefaultHint = { link = "DiagnosticHint" },
 		DiagnosticDefaultInfo = { link = "DiagnosticInfo" },
