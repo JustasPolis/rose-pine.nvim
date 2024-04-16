@@ -46,7 +46,7 @@ config.options = {
 		info = "foam",
 		note = "pine",
 		todo = "rose",
-		warn = "gold",
+		warn = "rose",
 
 		git_add = "foam",
 		git_change = "rose",
