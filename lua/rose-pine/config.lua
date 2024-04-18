@@ -30,8 +30,8 @@ config.options = {
 	},
 
 	styles = {
-		bold = true,
-		italic = true,
+		bold = false,
+		italic = false,
 		transparency = false,
 	},
 
